@@ -1,0 +1,403 @@
+<html>
+    <head>
+        <title>SprintShop</title>
+        <link rel="icon" type="image/x-icon" href="img/logo.jpeg">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+             <table>
+            <td>
+            <h1>Sprint<font color="#98FB98">Shop</font></h1>
+            <br>
+            <br>
+            <div align="left"></div>
+            <h1><font color="#0EA5A5">Supera tus limites y</font></h1>
+            <h1><font color="#E11D49">alcanza nuevas alturas</font></h1>
+        </td>
+    </table>
+            <div class="container-icon">
+                            <div align="right">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor"
+                  class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                  </svg> 
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div> 
+                </div> 
+                  <div class="container-cart-products hidden-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" viewBox="0 0 24 24" 
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>
+                    </div> 
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">Q0.00</span>
+                    </div>              
+            </div>
+        </header>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_363,c_limit/bec06d1e-ab0e-4c12-b8d9-a6a7dd9189e7/los-6-mejores-calzados-nike-para-caminar.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Zapatos Nike Unisex</h2>
+                    <p class="price">Q600.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://www.sportline.com.gt/media/catalog/product/j/l/jl6972_apparel-back-center-view.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Camiseta Colombia Home Jersey 2026 de Hombre</h2>
+                    <p class="price">Q950.90</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://www.sportline.com.gt/media/catalog/product/i/h/ih5243_footwear-side-lateral-center-view.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Zapatillas Rapidmove Adv 2 de Mujer</h2>
+                    <p class="price">Q850.39</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://www.sportline.com.gt/media/catalog/product/f/v/fv1118_footwear-side-lateral-center-view.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Zapatillas Adidas Falcon de Mujer</h2>
+                    <p class="price">Q500.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://www.sportline.com.gt/media/catalog/product/j/m/jm8396_apparel-front-center-view.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Camiseta Argentina Home Jersey 2026 de Hombre</h2>
+                    <p class="price">Q950.90</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://www.sportline.com.gt/media/catalog/product/m/r/mr7441a-blk-srf_frontf1-001.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Camiseta Aero Tee de Hombre</h2>
+                    <p class="price">Q234.50</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/ZGUxNmZjYT_1_1761837930.jpeg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Balon De Basketbol, Bl Bkb Spalding 2021 Agc Sz7 Comp Neg/Bla T</h2>
+                    <p class="price">Q350.90</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/N2RiYzU2Yz_1_1759423216.jpeg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Balón De Fútbol Adidas Trionda Club Talla 5, Cosido A Máquina,</h2>
+                    <p class="price">Q290.90</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/NzhmYTIxMj_1_1756492729.jpeg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Tenis Adidas Cloudfoam Move Mujer Negro Id6524 Talla 6.5</h2>
+                    <p class="price">Q730.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/YmYyN2YwMm_1_1773960775.jpeg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Camiseta Adidas para Hombre Talla L</h2>
+                    <p class="price">Q250.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MjFlY2YyOW_1_1756492741.jpeg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Camisola Adidas Real Madrid Hombre Azul Jj4182 Talla M</h2>
+                    <p class="price">Q660.70</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/NDA3NzllMW_1_1756492741.jpeg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Camiseta De Fútbol Adidas Hombre, Talla M, Blanco</h2>
+                    <p class="price">Q660.70</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/B09YC2SCSL.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>adidas Mens Essentials Feel Ready Training, Tamaño Med</h2>
+                    <p class="price">Q250.50</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/YmQ1YmFkYz.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Runhit Short Sleeve Compression Shirts for Men</h2>
+                    <p class="price">Q139.90</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/B082VY85QT.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>PUMA BMW Motorsport Mens BMW M Motorsport Graphic Tee-Equipo</h2>
+                    <p class="price">Q384.50</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/MzczZGIwNj_1.png" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Audífonos Inalámbricos JBL Vibe Beam 2 Con Cancelación de Ruido</h2>
+                    <p class="price">Q349.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/M2JhN2UxNT_242.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Audífonos Apple Airpods Pro 2 Con Cancelación De Ruido, Inalámb</h2>
+                    <p class="price">Q1835.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/NTkxMTc3ND_1.png" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Audífonos JBL Tune 520BT Inalámbricos, Color Azul</h2>
+                    <p class="price">Q320.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/B08NWMJ1F8.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Under Armour Mens New Freedom Flag T-Shirt</h2>
+                    <p class="price">Q364.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/B0DN1L5M4G.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>TRFIC Mens Fleece Cargo Sweatpants Heavyweight Elastic Waist Pa</h2>
+                    <p class="price">Q524.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/NTQ1OWY4ZG.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>adidas Mens Terrex Ax4 Hiking - Tamaño 6 - Color Wonder Steel/G</h2>
+                    <p class="price">Q1044.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/ZTZkOTdiNz_1_1770050656.jpeg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Polo Adidas App Squadra Male, Color Blanco, Talla L, JY3419</h2>
+                    <p class="price">Q290.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/B0B71VYJG5.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>CJMIERR Mens Casual Joggers Pants - Cotton Drawstring Chino Carg</h2>
+                    <p class="price">Q384.90</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/ZjRiODJmZT_1759422309.jpeg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Urban Hunter - Mochila Estudiantil, De Viaje O Casual Con Espa</h2>
+                    <p class="price">Q525.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/MmNiOTY5OD_1_1776446801.png" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>MOCHILA ADIDAS COMPETITION NEGRA - JY7976</h2>
+                    <p class="price">Q545.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/_1757362816.png" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Xiaomi Redmi Watch 5 Active Silver</h2>
+                    <p class="price">Q395.90</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/MzJhYzQ5YT.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Reloj Apple Watch SE 11 GPS, 42mm, Aluminio Color Gris</h2>
+                    <p class="price">Q4329.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/1000x1000/OTVhNzhjMD.png" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Reloj Apple Watch SE 11GPS, 44Mm, Aluminio Color Negro Midnight</h2>
+                    <p class="price">Q2695.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/YzQ3MDQ5ZT_2.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Under Armour Mens Ignite Pro Slide Sandal - Tamaño 7 - Color Wh</h2>
+                    <p class="price">Q434.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/NWRhNzM5N2_1.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Under Armour Mens Ansa Graphic Slide Sandal - Tamaño 13</h2>
+                    <p class="price">Q354.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/B0BZXTG5BD_1.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Under Armour Mens Charged Surge 4 Sneaker - Tamaño 10</h2>
+                    <p class="price">Q829.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://img.pacifiko.com/PROD/resize/1/250x250/MzBiODBlZD.jpg" alt="producto">
+                </figure>
+                <div class="info-product">
+                    <h2>Under Armour Womens Charged Assert 9 Running Shoe - Tamaño 6.5</h2>
+                    <p class="price">Q714.00</p>
+                    <button onclick="agregar('Crystallized Bloom',300)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <script src="Tienda.js"></script>
+        <h3><font color="F1666D">©Cristian-Orellana-Yuviria-Rojas</font></h3>
+    </body>
+</html>
